@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Login{
+  padding: 120px 0;
+  margin: 0 auto;
+  max-width: 330px;
+}
+
+.containerForm{
+  padding: 100px 0;
+  margin: 0 auto;
+  max-width: 330px;
+}

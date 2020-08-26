@@ -55,7 +55,7 @@ class Registration extends Component {
                 <div className="jumbotron" style={{backgroundColor: "gray"}}>
                 <h3>Register</h3>
                 </div>
-                <div className="container">
+                <div className="container containerForm">
                     <form onSubmit={this.handleSubmit}>
                       <FormGroup controlId ="email">
                         <FormLabel>Email</FormLabel>

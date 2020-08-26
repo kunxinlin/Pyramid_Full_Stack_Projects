@@ -45,7 +45,7 @@ class AddStudent extends Component {
                 <div className="jumbotron" style={{backgroundColor: "gray"}}>
                 <h3 style={{textAlign: "center"}}>Add A New Student</h3>
                 </div>
-                <div className="container">
+                <div className="container containerForm">
                     <form onSubmit={this.handleSubmit}>
                       <FormGroup controlId ="firstname">
                         <FormLabel>First Name</FormLabel>
