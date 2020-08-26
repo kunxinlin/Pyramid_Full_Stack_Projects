@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import StudentDataService from "../service/StudentDataService";
 
-class MainPage extends Component {
+class ProfessorPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,6 +36,7 @@ class MainPage extends Component {
               <th scope="col">#</th>
               <th scope="col">First Name</th>
               <th scope="col">Last Name</th>
+              <th scope="col">SSN</th>
             </tr>
           </thead>
           <tbody>
@@ -45,6 +46,7 @@ class MainPage extends Component {
                         <td>{student.id}</td>
                         <td>{student.firstName}</td>
                         <td>{student.lastName}</td>
+                        <td>{student.ssn}</td>
                     </tr>)
             }
           </tbody>
@@ -56,4 +58,4 @@ class MainPage extends Component {
   }
 }
 
-export default withRouter(MainPage);
+export default withRouter(ProfessorPage);
