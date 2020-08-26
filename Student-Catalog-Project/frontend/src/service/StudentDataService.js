@@ -5,12 +5,12 @@ class StudentDataService{
         return axios.get(`http://localhost:8080/getAllStudents/`)
     }
 
-    addStudent(card){
-        return axios.post(`http://localhost:8080/addStudent/`, card)
+    addStudent(student){
+        return axios.post(`http://localhost:8080/addStudent/`, student)
     }
    
-    updateStudent(card){
-        return axios.put(`http://localhost:8080/updateStudent/`, card)
+    updateStudent(student){
+        return axios.put(`http://localhost:8080/updateStudent/`, student)
     }
 
     deleteStudent(id){

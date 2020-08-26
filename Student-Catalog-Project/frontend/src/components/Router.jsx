@@ -4,6 +4,7 @@ import Registration from './Registration';
 import Navbar from './Navbar';
 import Login from './Login';
 import MainPage from './MainPage';
+import AddStudent from './student/AddStudent';
 
 class Router extends Component {
     render() {
@@ -15,6 +16,7 @@ class Router extends Component {
                             <Route exact path="/" component={Login}></Route>
                             <Route path="/register" component={Registration}></Route>
                             <Route path="/mainpage" component={MainPage}></Route>
+                            <Route path="/addStudent" component={AddStudent}></Route>
                         </Switch>
                 </BrowserRouter>
             </div>
