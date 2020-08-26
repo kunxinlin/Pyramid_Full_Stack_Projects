@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import './bootstrap.css';
 import './App.css';
+import Router from './components/Router';
 
 function App() {
   return (
     <div className="App">
-    <h1>STUDENT CATALOG</h1>
+      <Router/>
     </div>
   );
 }
 
 export default App;
+

@@ -17,8 +17,8 @@ public class StudentController {
     @Autowired
     public StudentController(StudentDAOImpl studentDAOImpl) {this.studentDAOImpl = studentDAOImpl;}
 
-    //http://localhost:8080/retrieveAllEmployees
-    @GetMapping("/retrieveAllStudents")
+    //http://localhost:8080/getAllStudents
+    @GetMapping("/getAllStudents")
     public List<Student> findAll() {
         return studentDAOImpl.findAll();
     }
