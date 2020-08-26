@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
+import java.util.Collections;
 import java.util.List;
 
 @Repository
@@ -23,7 +24,7 @@ public class StudentDAOImpl implements StudentDAO{
     @Transactional
     public List<Student> findAll() {
         Session currentSession = entityManager.unwrap(Session.class);
-        return currentSession.createQuery("FROM Student").getResultList();
+        return currentSession.createQuery("FROM Student ORDER BY last_name ASC, first_name ASC").getResultList();
     }
 
     @Override

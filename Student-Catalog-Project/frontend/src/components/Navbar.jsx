@@ -7,7 +7,7 @@ class Navbar extends Component {
             <header>
                 <nav className="navbar navbar-expand-md navbar-dark bg-dark">
                     <ul className="navbar-nav">
-                        <li><Link className="nav-link" to="/MainPage/">Home</Link></li>
+                        <li><Link className="nav-link">  </Link></li>
                     </ul>
                 </nav>
             </header>

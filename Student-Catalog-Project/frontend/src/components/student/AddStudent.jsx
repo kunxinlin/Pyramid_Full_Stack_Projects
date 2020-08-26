@@ -74,6 +74,7 @@ class AddStudent extends Component {
                           type="text"
                           value={this.state.ssn}
                           name="ssn"
+                          maxLength="7"
                           onChange={this.handleChange}
                         />
                       </FormGroup>
