@@ -34,14 +34,7 @@ class Login extends Component{
           {
             if(this.state.password !== this.state.passwordCheck) this.setState({error:"The email and/or password you have entered is not correct, please try again."})
             else{
-                if(UserDataService.retrieveIsProfessor(this.state.email) === true)
-                {
-                    this.props.history.push("/professorpage/", {email: this.state.email});
-                }
-                else{
-                    this.props.history.push("/mainpage/", {email: this.state.email});
-                }
-
+              UserDataService.retrieveIsProfessor(this.state.email).then(response =>{response.data === true ? this.props.history.push("/professorpage/", {email: this.state.email}) : this.props.history.push("/mainpage/", {email: this.state.email})})
             }
           }
         );
